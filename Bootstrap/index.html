@@ -1,0 +1,362 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link href="./css/css.css" rel="stylesheet">
+    <!-- icons from bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <title>New SHOP</title>
+
+    <style>
+        body {
+            position: relative;
+        }
+    </style>
+</head>
+
+<body class="bg-light">
+    <i class="bi bi-arrow-up-square-fill text-warning display-4 fixed-bottom text-center mb-1 btn-top"></i>
+    <nav class="navbar navbar-expand navbar-light bg-light d-md-block d-none fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <div class="icon-logo display-4 ">
+                    <i class="bi bi-shop"></i>
+                </div>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse align-items-baseline" id="navbarScroll">
+                <ul class="navbar-nav me-auto my-2 my-lg-0 align-items-center d-flex navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                    <li class="nav-item">
+                        <a class="nav-link pt-3 active" aria-current="page" href="#hero">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link pt-3" href="#exclusivebrands">Exclusive Brands</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link pt-3 dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Stores
+                </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                            <li><a class="dropdown-item" href="#allstoreh1">All Stores</a></li>
+                            <li><a class="dropdown-item" href="#">Favorite Stores</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Featured</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link pt-3 " href="#">LogIn<img src="./image/WebIcon_Account.png" class="bg-dark mx-1" style="border-radius:50%;width:30px " alt="">
+                            
+                        </a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2 " type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-warning" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!-- navbar in sm + md  -->
+    <nav class="navbar navbar-light bg-light fixed-top  d-md-none d-block">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <div class="icon-logo display-2 ms-5">
+                    <i class="bi bi-shop mb-5"> </i>
+                    <span class="text-warning lead">Shop</span>
+                </div>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+            <span class="navbar-toggler-icon"></span></button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">MY Shop</h5>
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item ">
+                            <a class="nav-link active" aria-current="page" href="#hero">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#exclusivebrands">Exclusive Brands</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Stores</a>
+                            <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                                <li><a class="dropdown-item" href="#allstoreh1">All Stores</a></li>
+                                <li><a class="dropdown-item" href="#">Favorite Stores</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Featured</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-warning" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+
+
+    <!-- -----------------------end navbar ---------------------------------------- -->
+
+
+
+
+
+
+    <!-- ----------------------- start home ----------------------- ----------------------- -->
+    <div id="carouselExampleDark" class="carousel carousel-dark slide overflow-hidden" data-bs-ride="carousel" id="hero">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+                <section id="hero" class="text-dark text-center text-sm-start py-5">
+                    <div class="container">
+                        <!-- d-flex : display:flex 
+                        d-sm-flex :  من بعد السمول عميل فليكس بسس قبلا لا تعمل فليكس وخلي العناصر بلوك تحت بعضها -->
+                        <div class="d-md-flex  justify-content-center ">
+                            <div style="margin-top:88px">
+                                <!-- text-primary : لون أساسي 
+                                components/alerts/ : من هون في كذا كلاس وكذا لون 
+                                display-5 :  حجم خط 
+                                lead : نوع خط جميل -->
+                                <h1 class="display-5">Your no 1 online <span class="text-warning">fashion</span> destination</h1>
+                                <p class="py-1 lead "> Nobis reiciendis explicabo minima quam alias mollitia nisi vel aliquam nihil, dolor ab quidem veniam. Porro inventore nobis reprehenderit! Corporis aut libero adipisci ad fugit totam iure?</p>
+                                <button class="btn btn-warning text-light float-lg-end me-5">Get Started</button>
+                            </div>
+                            <!-- 
+                                d-sm-block d-none 
+                                sm : فقط من بعد السمول أظهر الصورة -->
+                            <img class="img-fluid move-image w-50 d-md-block d-none" src="./image/circle-slider-1.jpg" alt="">
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+                <section id="hero" class="text-dark text-center text-sm-start py-5">
+                    <div class="container">
+                        <!-- d-flex : display:flex 
+                        d-sm-flex :  من بعد السمول عميل فليكس بسس قبلا لا تعمل فليكس وخلي العناصر بلوك تحت بعضها -->
+                        <div class="d-md-flex  justify-content-center flex-row-reverse">
+                            <div style="margin-top:88px">
+                                <!-- text-primary : لون أساسي 
+                                components/alerts/ : من هون في كذا كلاس وكذا لون 
+                                display-5 :  حجم خط 
+                                lead : نوع خط جميل -->
+                                <h1 class="display-5">Your no 1 online <span class="text-warning">fashion</span> destination</h1>
+                                <p class="py-1 lead "> Nobis reiciendis explicabo minima quam alias mollitia nisi vel aliquam nihil, dolor ab quidem veniam. Porro inventore nobis reprehenderit! Corporis aut libero adipisci ad fugit totam iure?</p>
+                                <button class="btn btn-warning text-light">Get Started</button>
+                            </div>
+                            <!-- 
+                                d-sm-block d-none 
+                                sm : فقط من بعد السمول أظهر الصورة -->
+                            <img class="img-fluid move-image w-50  d-md-block d-none" src="./image/circle-slider-2.jpg" alt="">
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div class="carousel-item">
+                <section id="hero" class="text-dark text-center text-sm-start py-5">
+                    <div class="container">
+                        <!-- d-flex : display:flex 
+                        d-sm-flex :  من بعد السمول عميل فليكس بسس قبلا لا تعمل فليكس وخلي العناصر بلوك تحت بعضها -->
+                        <div class="d-md-flex  justify-content-center flex-row-reverse">
+                            <div style="margin-top:88px">
+                                <!-- text-primary : لون أساسي 
+                                components/alerts/ : من هون في كذا كلاس وكذا لون 
+                                display-5 :  حجم خط 
+                                lead : نوع خط جميل -->
+                                <h1 class="display-5">Your no 1 online <span class="text-warning">fashion</span> destination</h1>
+                                <p class="py-1 lead "> Nobis reiciendis explicabo minima quam alias mollitia nisi vel aliquam nihil, dolor ab quidem veniam. Porro inventore nobis reprehenderit! Corporis aut libero adipisci ad fugit totam iure?</p>
+                                <button class="btn btn-warning text-light">Get Started</button>
+                            </div>
+                            <!-- 
+                                d-sm-block d-none 
+                                sm : فقط من بعد السمول أظهر الصورة -->
+                            <img class="img-fluid move-image w-50 d-md-block d-none" src="./image/circle-slider-3.jpg" alt="">
+                        </div>
+
+
+                    </div>
+
+                </section>
+
+
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev"> <span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="visually-hidden">Previous</span>
+            </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="visually-hidden">Next</span>
+            </button>
+    </div>
+
+
+
+    <!-- ----------------------------------------  End Home ----------------------------------------   -->
+
+
+
+
+    <!-- ---------------------------------------- start Exclusive Brands----------------------------------------  -->
+
+    <div class="container" id="exclusivebrands">
+        <div class="arrw"></div>
+        <!-- space-margin -->
+        <div class="my-4 w-100 " style=" height:20px"></div>
+        <h1 class=" py-5 text-center " id="exclusivebrandsh1">Exclusive Brands</h1>
+
+        <div class="row  d-flex" style="justify-content: space-around">
+            <div class=" col-lg-3 col-md-6 text-center  modul-1  my-3 py-2 pt-4 text-light ">
+                <figure class="figure ">
+                    <a href="#"> <img src="./image/module_04.jpg" class="module figure-img img-fluid rounded" alt="..."></a>
+                    <figcaption class="figure-caption lead">Shop Now</figcaption>
+                </figure>
+            </div>
+            <div class=" col-lg-3 col-md-6 text-center  modul-2  my-3 py-2 pt-4 text-light ">
+                <figure class="figure">
+                    <a href="#"> <img src="./image/module_05.jpg" class="module figure-img img-fluid rounded" alt="..."></a>
+
+                    <figcaption class="figure-caption lead">Shop Now</figcaption>
+                </figure>
+            </div>
+            <div class=" col-lg-3 col-md-6 text-center  modul-3  my-3 py-2 pt-4 text-light ">
+                <figure class="figure">
+                    <a href="#"> <img src="./image/module_06.jpg" class="module figure-img img-fluid rounded" alt="..."></a>
+
+                    <figcaption class="figure-caption lead">Shop Now</figcaption>
+                </figure>
+            </div>
+            <div class=" col-lg-3 col-md-6 text-center  modul-4  my-3 py-2 pt-4 text-light ">
+                <figure class="figure">
+                    <a href="#"> <img src="./image/module_10.jpg" class="module figure-img img-fluid rounded" alt="..."></a>
+
+                    <figcaption class="figure-caption lead">Shop Now</figcaption>
+                </figure>
+            </div>
+            <div class=" col-lg-3 col-md-6 text-center  modul-5  my-3 py-2 pt-4 text-light ">
+                <figure class="figure">
+                    <a href="#"><img src="./image/module_08.jpg" class="module figure-img img-fluid rounded" alt="..."></a>
+
+                    <figcaption class="figure-caption lead">Shop Now</figcaption>
+                </figure>
+            </div>
+            <div class=" col-lg-3 col-md-6 text-center  modul-6 my-3 py-2 pt-4 text-light ">
+                <figure class="figure">
+                    <a href="#"><img src="./image/module_09.jpg" class="module figure-img img-fluid rounded" alt="..."></a>
+
+                    <figcaption class="figure-caption lead">Shop Now</figcaption>
+                </figure>
+            </div>
+        </div>
+
+
+
+
+
+
+    </div>
+
+
+    <!-- ---------------------------------------- end Exclusive Brands ---------------------------------------- -->
+
+    <div id="allstoreh1"></div>
+    <!-- space-margin -->
+    <div class="mt-5 w-100 bg-dark d-flex align-items-center" style=" height:150px">
+        <div class="container">
+            <h1 class="title  text-light display-1"> <span class="text-danger"> All </span>Store</h1>
+        </div>
+
+    </div>
+    <section id="allstore">
+        <div class="mask">
+            <div class="container">
+
+                <h3 class=" text-start lead text-capitalize text-light py-5 w-75 ">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat sint illo nisi? Perspiciatis sunt placeat vero eligendi officiis beatae alias sint quo quibusdam impedit possimus aspernatur iure eos, inventore dolorem neque id nam magnam
+                    accusamus error repellat? Possimus, pariatur quis! Lorem ipsum dolor sit amet consectetur adipisicing
+                    <br>
+                </h3>
+                <a href="allstore.html" target="_blank">
+                    <button type="button" class="btn btn-dark my-1 text-center w-25  " style="z-index:2" data-bs-toggle="tooltip" data-bs-placement="top" title="Tooltip on top">
+                    Shop
+                  </button>
+                </a>
+
+
+            </div>
+        </div>
+
+        <img src="./image/wave.svg " alt=" " class="position-absolute  left-0 " style="bottom: -10">
+    </section>
+
+
+
+
+
+    <section id="faq" class="py-5">
+
+        <h2 class="text-center my-3">Frequently Asked Questions</h2>
+        <div class="accordion accordion-flush" id="faq-bt">
+            <div class="accordion-item">
+                <h5 class="accordion-header bg-dark" id="faq-one">
+                    <button class="accordion-button collapsed bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#answer-one">Question One</button>
+                </h5>
+                <div class="accordion-collapse collapse py-4 px-3 lead px-3 " data-bs-parent="#faq-bt" id="answer-one">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo sed impedit voluptatum obcaecati distinctio minus aut? Eum, at? Similique, facilis.</div>
+            </div>
+
+            <div class="accordion-item">
+                <h5 class="accordion-header" id="faq-two">
+                    <button class="accordion-button collapsed bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#answer-two">Question two</button>
+                </h5>
+                <div class="accordion-collapse collapse py-4 px-3 lead " data-bs-parent="#faq-bt" id="answer-two">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo sed impedit voluptatum obcaecati distinctio minus aut? Eum, at? Similique, facilis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum obcaecati suscipit accusantium
+                    architecto iste fugiat possimus qui, ipsum laboriosam recusandae!
+                </div>
+            </div>
+
+
+            <div class="accordion-item">
+                <h5 class="accordion-header" id="faq-three">
+                    <button class="accordion-button collapsed bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#answer-three">Question three</button>
+                </h5>
+                <div class="accordion-collapse collapse py-4 px-3 lead " data-bs-parent="#faq-bt" id="answer-three">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo sed impedit voluptatum obcaecati distinctio minus aut? Eum, at? Similique, facilis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam aperiam qui molestiae
+                    quia tempora, architecto eligendi quos voluptatem mollitia. Earum, cumque iure. Minima, aliquam molestiae autem sapiente officia labore totam ab fuga praesentium eligendi dicta odio nostrum a! Facere, voluptas.
+                </div>
+            </div>
+
+
+
+        </div>
+
+
+    </section>
+
+    <footer class="py-1 text-center text-light bg-dark position-relative">
+        <div class="container">
+            <p class="lead">
+                Copyright © 2021 Izat Harb
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <script src="./js/bootstrap.bundle.min.js "></script>
+    <script src="./js/js.js "></script>
+</body>
+
+</html>

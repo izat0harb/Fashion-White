@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link href="./css/css.css" rel="stylesheet">
+    <!-- icons from bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <title>All Store</title>
+    <style>
+        .box div {
+            background-size: cover;
+            background-position: 50%;
+            transition: 1s all linear;
+            filter: contrast(0.6);
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: end;
+            align-content: end;
+            color: #fff
+        }
+        
+        .box div:hover {
+            background-position: 55%;
+            filter: none;
+        }
+        
+        .box div:hover .link::after {
+            transition: .5s all linear;
+            ;
+            width: 100%;
+        }
+        
+        .box .link {
+            transition: .5s all linear;
+            position: relative;
+            text-decoration: none;
+        }
+        
+        .box .link::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: -10px;
+            width: 0;
+            height: 2px;
+            background-color: #fff
+        }
+        
+        .container .gotohome {
+            transition: .5s all linear;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <div class="rwo vh-100 bg-dark d-flex text-center">
+        <div class="col-4 h-100  bg-danger">xxx</div>
+        <div class="col-4 h-100  bg-primary">xxx</div>
+        <div class="col-4 h-100  bg-success">xxx</div>
+    </div> -->
+    <div class="fixed-top text-ligth  container">
+        <a href="index.html">
+            <i class="bi bi-chevron-double-left  display-4 gotohome"></i>
+        </a>
+    </div>
+    <div class="box vh-100 d-flex bg-dark text-center " style="flex-wrap: wrap;">
+        <div class="col-md-4 col-12 bg-danger  h-100 pb-5 " style="background-image: url(./image/module_01.jpg)">
+            <a href="women.html" class="link text-light lead display-5">Women </a>
+        </div>
+        <div class="col-md-4 col-12 bg-primary h-100 pb-5 " style="background-image: url(./image/module_02.jpg)">
+            <a href="man.html" class="link text-light lead display-5">Men </a>
+        </div>
+        <div class="col-md-4 col-12 bg-success h-100 pb-5 " style="background-image: url(./image/module_03.jpg)">
+            <a href="kids.html" class="link text-light lead display-5">Kids </a>
+        </div>
+    </div>
+    <script src="./js/bootstrap.bundle.min.js "></script>
+    <script src="./js/js.js "></script>
+</body>
+
+</html>
